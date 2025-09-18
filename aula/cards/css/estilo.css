@@ -1,0 +1,84 @@
+html{
+            font-family:fantasy
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .cards{
+            background-color: #040131;
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+
+        }
+        .card{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            width: 250px;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        .card img{
+            width: 150px;
+            height:150px;
+        }
+        .titulo{
+            font-size:40px;
+            font-weight: 50;
+            color: black
+        }
+        .paragrafo{
+            font-size: medium;
+            font-weight: 30;
+
+        }
+        .preco{
+            color: blue;
+            font-size: 50;
+            font-weight: 400;
+        }
+
+        svg{
+            width: 20px;
+        }
+        svg:hover path{
+            fill: yellow;
+        }
+        .container-estrela{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        li{
+            list-style: none; 
+        }
+        .btn-enviar{
+            background-color: #030059;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 16px;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 30px;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+        .btn-enviar:hover{
+            background-color: #0b04cd;
+        }
+        .btn-enviar a{
+            color: white;
+            text-decoration: none;
+        }
