@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        form{
+            padding: 20px 5px;
+            display: flex;
+            margin: 10px;
+            border: 1px solid black;
+            flex-direction: column;
+            gap: 10px;
+            width: 200px;
+            background-color: rgb(158, 157, 157);
+            border-radius: 10px;
+            
+        }
+        header h2{
+            text-align: center;
+        }
+        input{
+            border-radius: 3%;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="Login">
+        <header>
+            <h2>Login</h2>
+        </header>
+        <div class="nome">
+            <h2>Nome</h2>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="senha">
+            <h2>Senha</h2>
+            <input type="password" name="senha" placeholder="Digite sua senha">
+        </div>
+        
+    </form>
+</body>
+</html>
