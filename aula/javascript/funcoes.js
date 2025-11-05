@@ -17,6 +17,23 @@ function adicao(n1, n2){
 const resultadoAdicao = adicao(4, 86)
 console.log(resultadoAdicao)
 
+function subtracao(n1, n2){
+    return n1-n2
+}
+const resultadoSubtracao = subtracao(125, 86)
+console.log(resultadoSubtracao)
+
+function multiplicacao(n1, n2){
+    return n1*n2
+}
+const resultadoMultiplicacao = multiplicacao(5, 4)
+console.log(resultadoMultiplicacao)
+
+function divisao(n1, n2){
+    return n1/n2
+}
+const resultadoDivisao = divisao(10,2 )
+console.log(resultadoDivisao)
 //faça uma versão para subtração, multiplicação, divisão
 
 
