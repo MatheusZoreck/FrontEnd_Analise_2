@@ -10,30 +10,36 @@ function dizOla(){
 }
 function dizOlaPessoa(nome){
     alert(`Não seja timido(a) ${nome}, Fala oi` )
+
+    //adição
 }
 function adicao(n1, n2){
     return n1+n2
 }
 const resultadoAdicao = adicao(4, 86)
-console.log(resultadoAdicao)
+console.log (`adição: ${resultadoAdicao}`)
+
+//subtração
 
 function subtracao(n1, n2){
     return n1-n2
 }
 const resultadoSubtracao = subtracao(125, 86)
-console.log(resultadoSubtracao)
+console.log(`subtração: ${resultadoSubtracao}`)
 
+//multiplicação
 function multiplicacao(n1, n2){
     return n1*n2
 }
 const resultadoMultiplicacao = multiplicacao(5, 4)
-console.log(resultadoMultiplicacao)
+console.log(`Multiplicação: ${resultadoMultiplicacao}`)
 
+//divisão
 function divisao(n1, n2){
     return n1/n2
 }
 const resultadoDivisao = divisao(10,2 )
-console.log(resultadoDivisao)
+console.log(`divisão: ${resultadoDivisao}` )
 //faça uma versão para subtração, multiplicação, divisão
 
 
