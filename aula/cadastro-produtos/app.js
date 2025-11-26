@@ -28,23 +28,46 @@ formulario.addEventListener('submit', function(event){
     alert(titulo)
 
     console.log(itensProdutos)
-
+     
+    renderizarCard()
     formulario.reset()
     //formulario.reset()
 })
 
 // CRIAR UMA FUNÇÃO QUE GERA UM TEMPLATE DO CARD
 
-function criarCardNovo(){
+function criarCardNovo(item){
     //tudo: Criar tags html e retornar
+     return `
+        <div class="card">
+            <div class="imagem-container">
+                <img src="${item.urlImagem}" alt="Imagem">
+            </div>
+            <h3>${item.titulo}</h3>
+            <p>${item.descricao}</p>
+        </div>
+    `
 }
 
 //RENDERIZAR O CARD NOVO NA PAGINA DO APP
 
-function.renderizarCard(){
+function renderizarCard(){
     //TUDO: Inserir card atualizado na página
+     const item = itensProdutos[itensProdutos.length - 1]
+
+     const cardHTML = criarCardNovo(item)
+    
+     containerCards.insertAdjacentHTML("beforeend", cardHTML)
+
 }
 
-btnRemover.addEventListener('click', function(){
+vpnRemover.addEventListener('click', function(){
     alert('isso vai acabar deletando um card')
+
+    itensProdutos.pop()
+
+    const ultimoCard = containerCards.lastElementChild
+    if(ultimoCard){
+        containerCards.removeChild(ultimoCard)
+    }
 })
